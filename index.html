@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Hangman Game</h1>
+        
+        <!-- Difficulty Selection Buttons -->
+        <div id="difficulty-buttons">
+            <button class="difficulty-button" data-level="easy">Easy</button>
+            <button class="difficulty-button" data-level="intermediate">Intermediate</button>
+            <button class="difficulty-button" data-level="genius">Genius</button>
+        </div>
+
+        <!-- Game Display -->
+        <div class="word-display" id="word-display"></div>
+        <div class="attempts" id="attempts">Attempts: 6</div>
+        <div class="wrong-guesses" id="wrong-guesses"></div>
+        <div class="keyboard" id="keyboard"></div>
+
+        <!-- Start Game Button -->
+        <button id="start-button" class="start-button" onclick="startGame()">Start Game</button>
+    </div>
+    
+    <script src="javascript/script.js"></script>
+</body>
+</html>
